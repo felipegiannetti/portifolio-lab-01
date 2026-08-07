@@ -16,7 +16,7 @@ const Experience = ({ language = 'pt' }) => {
       period: 'Dec 2025 – Present',
       type: 'SOC',
       description:
-        'Member of Anglo American\'s Global Cybersecurity team, working within the Security Operations Center (SOC) with a focus on Operational Technology (OT) environments.',
+        'Member of Anglo American\'s Global Cybersecurity team, working within the Security Operations Center (SOC).',
       color: 'bg-blue-500',
     },
     {
@@ -63,7 +63,7 @@ const Experience = ({ language = 'pt' }) => {
       period: 'Dez 2025 – Presente',
       type: 'SOC',
       description:
-        'Integrante do time global de Cybersecurity da Anglo American, atuando no Centro de Operações de Segurança (SOC) com foco em ambientes de Tecnologia Operacional (OT).',
+        'Integrante do time global de Cybersecurity da Anglo American, atuando no Centro de Operações de Segurança (SOC).',
       color: 'bg-blue-500',
     },
     {

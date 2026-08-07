@@ -84,7 +84,7 @@ const About = ({ language, showCurriculo, setShowCurriculo }) => {
         </>
       ),
       description:
-        'Faço parte do time global de Cybersecurity da Anglo American, atuando no Centro de Operações de Segurança (SOC) com foco em Tecnologia Operacional (OT). Também atuo como Engenheiro de Software Full Stack na FG Consultoria. Fluente em português (nativo) e inglês (C2 – EF SET Certificado), valorizo trabalho em equipe, aprendizado contínuo e resolução prática de problemas.',
+        'Faço parte do time global de Cybersecurity da Anglo American, atuando no Centro de Operações de Segurança (SOC). Também atuo como Engenheiro de Software Full Stack na FG Consultoria. Fluente em português (nativo) e inglês (C2 – EF SET Certificado), valorizo trabalho em equipe, aprendizado contínuo e resolução prática de problemas.',
       cards: [
         {
           icon: <FaGraduationCap />,
@@ -111,7 +111,7 @@ const About = ({ language, showCurriculo, setShowCurriculo }) => {
         </>
       ),
       description:
-        'I am part of Anglo American\'s Global Cybersecurity team, working within the Security Operations Center (SOC) with a focus on Operational Technology (OT). I also work as a Full Stack Software Engineer at FG Consultoria. Fluent in Portuguese (native) and English (C2 – EF SET Certified), I value teamwork, continuous learning, and practical problem-solving.',
+        'I am part of Anglo American\'s Global Cybersecurity team, working within the Security Operations Center (SOC). I also work as a Full Stack Software Engineer at FG Consultoria. Fluent in Portuguese (native) and English (C2 – EF SET Certified), I value teamwork, continuous learning, and practical problem-solving.',
       cards: [
         {
           icon: <FaGraduationCap />,
