@@ -3,7 +3,7 @@ import { FaBriefcase, FaCode, FaUsers, FaTrophy, FaJava, FaDatabase, FaChartBar 
 import {
   SiJavascript, SiPython, SiReact,
   SiHtml5, SiCss3, SiBootstrap, SiTailwindcss, SiSpringboot, SiGithub,
-  SiTypescript, SiPostgresql, SiMysql, SiDocker,
+  SiTypescript, SiPostgresql, SiMysql, SiDocker, SiNextdotjs, SiNestjs,
 } from 'react-icons/si';
 
 const Experience = ({ language = 'pt' }) => {
@@ -167,14 +167,16 @@ const Experience = ({ language = 'pt' }) => {
               { icon: <SiJavascript size={40} />, color: '#F7DF1E', name: 'JavaScript', level: l.avancado, pct: 100 },
               { icon: <SiTypescript size={40} />, color: '#3178C6', name: 'TypeScript', level: l.avancado, pct: 100 },
               { icon: <SiReact size={40} />, color: '#61DAFB', name: 'React', level: l.avancado, pct: 100 },
+              { icon: <SiNextdotjs size={40} />, color: '#FFFFFF', name: 'Next.js', level: l.avancado, pct: 100 },
+              { icon: <SiNestjs size={40} />, color: '#E0234E', name: 'NestJS', level: l.avancado, pct: 100 },
               { icon: <SiHtml5 size={40} />, color: '#E34F26', name: 'HTML5', level: l.avancado, pct: 100 },
               { icon: <SiCss3 size={40} />, color: '#1572B6', name: 'CSS3', level: l.avancado, pct: 100 },
               { icon: <SiBootstrap size={40} />, color: '#7952B3', name: 'Bootstrap', level: l.avancado, pct: 100 },
               { icon: <SiTailwindcss size={40} />, color: '#06B6D4', name: 'Tailwind CSS', level: l.avancado, pct: 100 },
               { icon: <SiGithub size={40} />, color: '#FFFFFF', name: 'Git / GitHub', level: l.avancado, pct: 100 },
-              { icon: <FaDatabase size={40} />, color: '#00E5FF', name: 'SQL', level: l.intermediario, pct: 70 },
-              { icon: <SiPostgresql size={40} />, color: '#4169E1', name: 'PostgreSQL', level: l.intermediario, pct: 70 },
-              { icon: <SiMysql size={40} />, color: '#4479A1', name: 'MySQL', level: l.intermediario, pct: 70 },
+              { icon: <FaDatabase size={40} />, color: '#00E5FF', name: 'SQL', level: l.avancado, pct: 100 },
+              { icon: <SiPostgresql size={40} />, color: '#4169E1', name: 'PostgreSQL', level: l.avancado, pct: 100 },
+              { icon: <SiMysql size={40} />, color: '#4479A1', name: 'MySQL', level: l.avancado, pct: 100 },
               { icon: <SiDocker size={40} />, color: '#2496ED', name: 'Docker', level: l.intermediario, pct: 70 },
               { icon: <FaChartBar size={40} />, color: '#F2C811', name: 'Power BI', level: l.intermediario, pct: 70 },
               { icon: <span className="font-black text-4xl leading-none" style={{ color: '#A8B9CC' }}>C</span>, color: '#A8B9CC', name: 'C', level: l.intermediario, pct: 60 },
