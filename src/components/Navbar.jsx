@@ -49,14 +49,14 @@ const Navbar = ({ language, setLanguage, setShowCurriculo }) => {
 
   const profileSummary = {
     pt: {
-      role: 'Estagiário Global de Cibersegurança',
+      role: 'Global Cybersecurity Operations',
       company: 'Anglo American',
       education: 'Eng. de Software – PUC Minas',
       location: 'Belo Horizonte, MG',
       bio: 'Estudante apaixonado por cibersegurança, desenvolvimento de software e inovação tecnológica. Fluente em inglês (C2).',
     },
     en: {
-      role: 'Global Cybersecurity Intern',
+      role: 'Global Cybersecurity Operations',
       company: 'Anglo American',
       education: 'Software Engineering – PUC Minas',
       location: 'Belo Horizonte, MG',

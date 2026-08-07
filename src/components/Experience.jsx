@@ -12,11 +12,11 @@ const Experience = ({ language = 'pt' }) => {
       id: 1,
       icon: <FaBriefcase />,
       company: 'Anglo American',
-      role: 'Global Cybersecurity Intern – SOC / OT',
+      role: 'Global Cybersecurity Operations',
       period: 'Dec 2025 – Present',
-      type: 'Internship',
+      type: 'SOC',
       description:
-        'Develops software automation, API integrations, Python data-processing tools, executive dashboards, and automated KPI pipelines for global cybersecurity operations, improving investigations, reporting, and operational decision-making. Independently delivered a cloud-based global cybersecurity training platform from architecture through production. Automation and data-quality improvements increased OT asset metadata visibility by 15.5% and reduced inaccurate records by 23.4%; also assumed responsibility for Brazilian OT monitoring, processing more than 1,000 security events in five days and eliminating the alert backlog.',
+        'Member of Anglo American\'s Global Cybersecurity team, working within the Security Operations Center (SOC) with a focus on Operational Technology (OT) environments.',
       color: 'bg-blue-500',
     },
     {
@@ -59,11 +59,11 @@ const Experience = ({ language = 'pt' }) => {
       id: 1,
       icon: <FaBriefcase />,
       company: 'Anglo American',
-      role: 'Estagiário Global de Cibersegurança – SOC / OT',
+      role: 'Global Cybersecurity Operations',
       period: 'Dez 2025 – Presente',
-      type: 'Estágio',
+      type: 'SOC',
       description:
-        'Desenvolve automações de software, integrações de APIs, ferramentas de processamento de dados em Python, dashboards executivos e pipelines automatizados de KPIs para operações globais de cibersegurança, aprimorando investigações, relatórios e decisões operacionais. Entregou de forma independente uma plataforma global de treinamento em cibersegurança na nuvem, da arquitetura à produção. Automações e melhorias na qualidade dos dados aumentaram em 15,5% a visibilidade dos metadados de ativos de OT e reduziram registros incorretos em 23,4%; também assumiu o monitoramento do ambiente brasileiro de OT, processando mais de 1.000 eventos em cinco dias e eliminando o acúmulo de alertas.',
+        'Integrante do time global de Cybersecurity da Anglo American, atuando no Centro de Operações de Segurança (SOC) com foco em ambientes de Tecnologia Operacional (OT).',
       color: 'bg-blue-500',
     },
     {
@@ -129,7 +129,7 @@ const Experience = ({ language = 'pt' }) => {
                   <div className="flex justify-between items-start flex-wrap gap-2">
                     <h3 className="text-2xl font-bold text-white">{exp.company}</h3>
                     <span className="bg-accent-green text-primary-dark px-3 py-1 rounded-full text-sm font-bold">
-                      {language === 'en' && (exp.type === 'Estágio' || exp.type === 'Internship') ? 'Internship' : language === 'en' && exp.type === 'Evento' ? 'Event' : exp.type}
+                      {exp.type}
                     </span>
                   </div>
                   <p className="text-accent-green font-semibold text-lg mt-1">{exp.role}</p>

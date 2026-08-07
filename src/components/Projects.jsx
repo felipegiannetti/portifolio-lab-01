@@ -58,18 +58,20 @@ const Projects = ({ language = 'pt' }) => {
       image: null,
       date: '2025–2026',
       internal: true,
+      featured: true,
     },
     {
       id: 6,
       name: 'Global Cybersecurity Training Platform',
       description:
-        'Global cloud-based training platform independently designed, architected, developed, tested, deployed, and launched for cybersecurity interns and apprentices. Built from backend and frontend through cloud deployment, it combines gamified learning paths, interactive quizzes, practical challenges, and AI-assisted educational resources to create a consistent cybersecurity awareness experience across multiple regions.',
+        'Global cloud-based training platform independently designed, architected, developed, tested, deployed, and launched for early-career cybersecurity professionals. Built from backend and frontend through cloud deployment, it combines gamified learning paths, interactive quizzes, practical challenges, and AI-assisted educational resources to create a consistent cybersecurity awareness experience across multiple regions.',
       technologies: ['Full Stack', 'Software Architecture', 'AI Integration', 'REST APIs', 'Cloud Deployment', 'Gamification'],
       github: null,
       live: null,
       image: null,
       date: '2026',
       internal: true,
+      featured: true,
     },
     {
       id: 7,
@@ -82,6 +84,7 @@ const Projects = ({ language = 'pt' }) => {
       image: null,
       date: '2026',
       internal: true,
+      featured: true,
     },
     {
       id: 8,
@@ -94,6 +97,7 @@ const Projects = ({ language = 'pt' }) => {
       image: null,
       date: '2026',
       internal: true,
+      featured: true,
     },
   ];
 
@@ -153,18 +157,20 @@ const Projects = ({ language = 'pt' }) => {
       image: null,
       date: '2025–2026',
       internal: true,
+      featured: true,
     },
     {
       id: 6,
       name: 'Plataforma Global de Treinamento em Cibersegurança',
       description:
-        'Plataforma global de treinamento em nuvem projetada, arquitetada, desenvolvida, testada, implantada e colocada em produção de forma independente para estagiários e aprendizes de cibersegurança. Construída do backend e frontend à implantação em nuvem, reúne trilhas gamificadas, questionários interativos, desafios práticos e recursos educacionais assistidos por IA para padronizar a conscientização em cibersegurança em diferentes regiões.',
+        'Plataforma global de treinamento em nuvem projetada, arquitetada, desenvolvida, testada, implantada e colocada em produção de forma independente para profissionais de cibersegurança em início de carreira. Construída do backend e frontend à implantação em nuvem, reúne trilhas gamificadas, questionários interativos, desafios práticos e recursos educacionais assistidos por IA para padronizar a conscientização em cibersegurança em diferentes regiões.',
       technologies: ['Full Stack', 'Arquitetura de Software', 'Integração de IA', 'REST APIs', 'Cloud Deployment', 'Gamificação'],
       github: null,
       live: null,
       image: null,
       date: '2026',
       internal: true,
+      featured: true,
     },
     {
       id: 7,
@@ -177,6 +183,7 @@ const Projects = ({ language = 'pt' }) => {
       image: null,
       date: '2026',
       internal: true,
+      featured: true,
     },
     {
       id: 8,
@@ -189,10 +196,13 @@ const Projects = ({ language = 'pt' }) => {
       image: null,
       date: '2026',
       internal: true,
+      featured: true,
     },
   ];
 
-  const projects = language === 'en' ? projectsEN : projectsPT;
+  const projects = [...(language === 'en' ? projectsEN : projectsPT)].sort(
+    (a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)),
+  );
 
   return (
     <section id="projects" className="min-h-screen bg-gradient-to-b from-primary-dark to-primary-blue py-14">
@@ -201,7 +211,7 @@ const Projects = ({ language = 'pt' }) => {
         <h2 className="text-5xl font-bold text-center mb-8 text-white">{language === 'en' ? 'Projects' : 'Projetos'}</h2>
         <div className="w-24 h-1 bg-accent-green mx-auto mb-4"></div>
         <p className="text-center text-gray-300 mb-12 text-lg">
-          {language === 'en' ? 'Timeline of my projects, from oldest to newest' : 'Linha do tempo dos meus projetos, do mais antigo ao mais recente'}
+          {language === 'en' ? 'Featured recent projects followed by my project timeline' : 'Projetos recentes em destaque, seguidos pela linha do tempo dos meus projetos'}
         </p>
 
         {/* Timeline */}
@@ -246,7 +256,14 @@ const Projects = ({ language = 'pt' }) => {
                     {/* Content */}
                     <div className="p-4 flex flex-col gap-2">
                       <div className="flex items-start justify-between gap-2">
-                        <h3 className="text-sm font-bold text-white leading-snug">{project.name}</h3>
+                        <div>
+                          {project.featured && (
+                            <span className="inline-flex mb-1 bg-accent-green/10 text-accent-green border border-accent-green/30 px-2 py-0.5 rounded-full text-[9px] font-extrabold uppercase tracking-widest">
+                              {language === 'en' ? 'Featured' : 'Destaque'}
+                            </span>
+                          )}
+                          <h3 className="text-sm font-bold text-white leading-snug">{project.name}</h3>
+                        </div>
                         <span className="flex-shrink-0 bg-accent-green text-primary-dark px-2 py-0.5 rounded-full text-xs font-bold">
                           {project.date}
                         </span>

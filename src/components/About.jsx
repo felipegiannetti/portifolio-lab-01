@@ -80,11 +80,11 @@ const About = ({ language, showCurriculo, setShowCurriculo }) => {
       title: 'Sobre Mim',
       intro: (
         <>
-          Olá! Sou estudante de Engenharia de Software na PUC Minas e Estagiário Global de Cibersegurança na <AngloTooltip language="pt" />.
+          Olá! Sou estudante de Engenharia de Software na PUC Minas e faço parte do time de Global Cybersecurity Operations da <AngloTooltip language="pt" />.
         </>
       ),
       description:
-        'Faço parte da equipe global de Cibersegurança da Anglo American, atuando no Centro de Operações de Segurança (SOC) com foco em Tecnologia Operacional (OT), onde desenvolvo automações em Python, integrações de APIs, soluções de processamento de dados, dashboards e plataformas internas em nuvem. Também atuo como Engenheiro de Software Full Stack na FG Consultoria, liderando o desenvolvimento de uma plataforma de consultoria financeira e estratégica baseada em IA. Fluente em português (nativo) e inglês (C2 – EF SET Certificado), tenho foco em arquitetura de software, backend, inteligência artificial, cloud e aplicações escaláveis.',
+        'Faço parte do time global de Cybersecurity da Anglo American, atuando no Centro de Operações de Segurança (SOC) com foco em Tecnologia Operacional (OT). Também atuo como Engenheiro de Software Full Stack na FG Consultoria. Fluente em português (nativo) e inglês (C2 – EF SET Certificado), valorizo trabalho em equipe, aprendizado contínuo e resolução prática de problemas.',
       cards: [
         {
           icon: <FaGraduationCap />,
@@ -107,11 +107,11 @@ const About = ({ language, showCurriculo, setShowCurriculo }) => {
       title: 'About Me',
       intro: (
         <>
-          Hello! I am a Software Engineering student at PUC Minas and Global Cybersecurity Intern at <AngloTooltip language="en" />.
+          Hello! I am a Software Engineering student at PUC Minas and part of the Global Cybersecurity Operations team at <AngloTooltip language="en" />.
         </>
       ),
       description:
-        'I am part of Anglo American\'s Global Cybersecurity team, working within the Security Operations Center (SOC) with a focus on Operational Technology (OT), where I develop Python automations, API integrations, data-processing solutions, dashboards, and internal cloud platforms. I also work as a Full Stack Software Engineer at FG Consultoria, leading the development of an AI-powered financial and strategic consulting platform. Fluent in Portuguese (native) and English (C2 – EF SET Certified), I focus on software architecture, backend engineering, artificial intelligence, cloud, and scalable applications.',
+        'I am part of Anglo American\'s Global Cybersecurity team, working within the Security Operations Center (SOC) with a focus on Operational Technology (OT). I also work as a Full Stack Software Engineer at FG Consultoria. Fluent in Portuguese (native) and English (C2 – EF SET Certified), I value teamwork, continuous learning, and practical problem-solving.',
       cards: [
         {
           icon: <FaGraduationCap />,
