@@ -173,6 +173,55 @@ const Certifications = ({ language }) => {
       organization: 'Universidade Estadual do Ceará / Huawei',
       date: 'Abr 2024',
     },
+    {
+      id: 23,
+      titlePT: 'CompTIA Security+: Enterprise Infrastructure Security Principles',
+      titleEN: 'CompTIA Security+: Enterprise Infrastructure Security Principles',
+      organization: 'Skillsoft',
+      date: '2026',
+    },
+    {
+      id: 24,
+      titlePT: 'CompTIA Security+: Architecture & Infrastructure Concepts',
+      titleEN: 'CompTIA Security+: Architecture & Infrastructure Concepts',
+      organization: 'Skillsoft',
+      date: '2026',
+    },
+    {
+      id: 25,
+      titlePT: 'CompTIA Security+: Data Protection Concepts & Strategies',
+      titleEN: 'CompTIA Security+: Data Protection Concepts & Strategies',
+      organization: 'Skillsoft',
+      date: '2026',
+    },
+    {
+      id: 26,
+      titlePT: 'CompTIA Security+: Mitigation Techniques',
+      titleEN: 'CompTIA Security+: Mitigation Techniques',
+      organization: 'Skillsoft',
+      date: '2026',
+    },
+    {
+      id: 27,
+      titlePT: 'CompTIA Security+: Survey of Malicious Activities',
+      titleEN: 'CompTIA Security+: Survey of Malicious Activities',
+      organization: 'Skillsoft',
+      date: '2026',
+    },
+    {
+      id: 28,
+      titlePT: 'Secure Network Architecture',
+      titleEN: 'Secure Network Architecture',
+      organization: 'Cybrary',
+      date: '2026',
+    },
+    {
+      id: 29,
+      titlePT: 'Lateral Movement: Remote Desktop Protocol (RDP)',
+      titleEN: 'Lateral Movement: Remote Desktop Protocol (RDP)',
+      organization: 'Cybrary',
+      date: '2026',
+    },
   ];
 
   return (

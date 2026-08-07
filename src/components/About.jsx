@@ -84,7 +84,7 @@ const About = ({ language, showCurriculo, setShowCurriculo }) => {
         </>
       ),
       description:
-        'Faço parte da equipe global de Cibersegurança da Anglo American, atuando no Centro de Operações de Segurança (SOC) com foco em Tecnologia Operacional (OT). Contribuo para a detecção, análise e mitigação de ameaças cibernéticas em ativos críticos, utilizando ferramentas como Claroty. Fluente em português (nativo) e inglês (C2 – EF SET Certificado), valorizo trabalho em equipe, aprendizado contínuo e resolução prática de problemas.',
+        'Faço parte da equipe global de Cibersegurança da Anglo American, atuando no Centro de Operações de Segurança (SOC) com foco em Tecnologia Operacional (OT), onde desenvolvo automações em Python, integrações de APIs, soluções de processamento de dados, dashboards e plataformas internas em nuvem. Também atuo como Engenheiro de Software Full Stack na FG Consultoria, liderando o desenvolvimento de uma plataforma de consultoria financeira e estratégica baseada em IA. Fluente em português (nativo) e inglês (C2 – EF SET Certificado), tenho foco em arquitetura de software, backend, inteligência artificial, cloud e aplicações escaláveis.',
       cards: [
         {
           icon: <FaGraduationCap />,
@@ -111,7 +111,7 @@ const About = ({ language, showCurriculo, setShowCurriculo }) => {
         </>
       ),
       description:
-        'I am part of the Global Cybersecurity team at Anglo American, working as a Security Operations Center (SOC) Intern focused on Operational Technology (OT) environments. I contribute to the detection, analysis, and mitigation of cybersecurity threats targeting critical OT assets, leveraging tools such as Claroty. Fluent in Portuguese (native) and English (C2 – EF SET Certified), I value teamwork, continuous learning, and practical problem-solving.',
+        'I am part of Anglo American\'s Global Cybersecurity team, working within the Security Operations Center (SOC) with a focus on Operational Technology (OT), where I develop Python automations, API integrations, data-processing solutions, dashboards, and internal cloud platforms. I also work as a Full Stack Software Engineer at FG Consultoria, leading the development of an AI-powered financial and strategic consulting platform. Fluent in Portuguese (native) and English (C2 – EF SET Certified), I focus on software architecture, backend engineering, artificial intelligence, cloud, and scalable applications.',
       cards: [
         {
           icon: <FaGraduationCap />,

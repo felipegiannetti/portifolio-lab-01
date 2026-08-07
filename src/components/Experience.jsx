@@ -1,8 +1,9 @@
 import React from 'react';
-import { FaBriefcase, FaCode, FaUsers, FaTrophy, FaJava } from 'react-icons/fa';
+import { FaBriefcase, FaCode, FaUsers, FaTrophy, FaJava, FaDatabase, FaChartBar } from 'react-icons/fa';
 import {
   SiJavascript, SiPython, SiReact,
   SiHtml5, SiCss3, SiBootstrap, SiTailwindcss, SiSpringboot, SiGithub,
+  SiTypescript, SiPostgresql, SiMysql, SiDocker,
 } from 'react-icons/si';
 
 const Experience = ({ language = 'pt' }) => {
@@ -15,41 +16,41 @@ const Experience = ({ language = 'pt' }) => {
       period: 'Dec 2025 – Present',
       type: 'Internship',
       description:
-        'Part of the Global Cybersecurity team within the SOC, focused on Operational Technology (OT) environments. Supporting detection, prevention, and mitigation of threats targeting critical OT assets, leveraging specialised tools such as Claroty to enhance visibility and protection.',
+        'Develops software automation, API integrations, Python data-processing tools, executive dashboards, and automated KPI pipelines for global cybersecurity operations, improving investigations, reporting, and operational decision-making. Independently delivered a cloud-based global cybersecurity training platform from architecture through production. Automation and data-quality improvements increased OT asset metadata visibility by 15.5% and reduced inaccurate records by 23.4%; also assumed responsibility for Brazilian OT monitoring, processing more than 1,000 security events in five days and eliminating the alert backlog.',
       color: 'bg-blue-500',
     },
     {
       id: 2,
+      icon: <FaCode />,
+      company: 'FG Consultoria',
+      role: 'Full Stack Software Engineer I',
+      period: 'Sep 2025 – Present',
+      type: 'Contract',
+      description:
+        'Leads the end-to-end development of an AI-powered financial and strategic consulting platform, owning software architecture, backend and frontend implementation, testing, cloud deployment, and continuous evolution. Built intelligent workflows for restructuring, valuation, investment risk, and cost-of-capital analysis; integrated more than 10 external APIs for data aggregation and automated reporting; and leads the architecture, development, deployment, and maintenance of the company website. Works directly with clients and stakeholders to turn business requirements into scalable software and automation solutions.',
+      color: 'bg-green-500',
+    },
+    {
+      id: 3,
       icon: <FaUsers />,
       company: 'PUC Minas',
       role: 'Teaching Assistant – Web Interface Development',
       period: 'Aug 2025 – Dec 2025',
-      type: 'Part-time',
+      type: 'Temporary',
       description:
-        'Worked as a teaching assistant for the Web Interface Development (DIW) course, helping students build web interfaces, clarifying questions about HTML, CSS, and JavaScript, and contributing to their practical understanding of the concepts taught.',
+        'Mentored more than 20 students in Java, Spring Boot, HTML, CSS, JavaScript, responsive web development, and software engineering fundamentals through practical projects and laboratory sessions. Reviewed code, supported debugging, advised on application structure and interface implementation, and provided individual feedback to improve code quality, usability, and problem-solving skills.',
       color: 'bg-purple-500',
     },
     {
-      id: 3,
+      id: 4,
       icon: <FaTrophy />,
       company: 'Clube Chalezinho',
       role: 'Team Manager',
-      period: 'Mar 2024 – Dec 2025',
-      type: 'Freelance',
+      period: 'Oct 2023 – Jun 2026',
+      type: 'Hybrid',
       description:
-        'Led a 15-member group recognised as a top-performing team for several consecutive months. Provided guidance and support to team members, resolved day-to-day challenges, distributed tasks effectively, and ensured a collaborative, results-driven work environment.',
+        'Led a 15-member team recognised as the top-performing team for nine consecutive months through effective task distribution, performance management, and process optimisation. Developed operational dashboards and reports to improve workload visibility and decision-making, managed daily operations, and fostered a collaborative, results-driven culture. Also planned and executed events, led client communication and negotiations, supported sales initiatives, and coordinated cross-functional delivery.',
       color: 'bg-yellow-500',
-    },
-    {
-      id: 4,
-      icon: <FaCode />,
-      company: 'Clube Chalezinho',
-      role: 'Event Coordinator',
-      period: 'Oct 2023 – Dec 2025',
-      type: 'Freelance',
-      description:
-        'Worked in event organisation, assisting with event planning and execution, maintaining daily communication with dozens of clients, presenting products, and leading negotiations to successfully close sales.',
-      color: 'bg-green-500',
     },
   ];
 
@@ -62,41 +63,41 @@ const Experience = ({ language = 'pt' }) => {
       period: 'Dez 2025 – Presente',
       type: 'Estágio',
       description:
-        'Integrante da equipe global de Cibersegurança, atuando no SOC com foco em ambientes de Tecnologia Operacional (OT). Apoiando a detecção, prevenção e mitigação de ameaças a ativos críticos de OT, utilizando ferramentas especializadas como Claroty para aumentar a visibilidade e a proteção.',
+        'Desenvolve automações de software, integrações de APIs, ferramentas de processamento de dados em Python, dashboards executivos e pipelines automatizados de KPIs para operações globais de cibersegurança, aprimorando investigações, relatórios e decisões operacionais. Entregou de forma independente uma plataforma global de treinamento em cibersegurança na nuvem, da arquitetura à produção. Automações e melhorias na qualidade dos dados aumentaram em 15,5% a visibilidade dos metadados de ativos de OT e reduziram registros incorretos em 23,4%; também assumiu o monitoramento do ambiente brasileiro de OT, processando mais de 1.000 eventos em cinco dias e eliminando o acúmulo de alertas.',
       color: 'bg-blue-500',
     },
     {
       id: 2,
+      icon: <FaCode />,
+      company: 'FG Consultoria',
+      role: 'Engenheiro de Software Full Stack Júnior',
+      period: 'Set 2025 – Presente',
+      type: 'Contrato',
+      description:
+        'Lidera o desenvolvimento completo de uma plataforma de consultoria financeira e estratégica baseada em IA, sendo responsável pela arquitetura, backend, frontend, testes, implantação em nuvem e evolução contínua. Desenvolveu fluxos inteligentes para reestruturação, valuation, análise de riscos e custo de capital; integrou mais de 10 APIs externas para agregação de dados e geração automática de relatórios; e lidera a arquitetura, o desenvolvimento, a implantação e a manutenção do site corporativo. Atua diretamente com clientes e stakeholders para transformar requisitos de negócio em soluções escaláveis de software e automação.',
+      color: 'bg-green-500',
+    },
+    {
+      id: 3,
       icon: <FaUsers />,
       company: 'PUC Minas',
       role: 'Monitor – Desenvolvimento de Interfaces Web',
       period: 'Ago 2025 – Dez 2025',
-      type: 'Aprendiz',
+      type: 'Temporário',
       description:
-        'Atuou como monitor da disciplina de Desenvolvimento de Interfaces Web (DIW), auxiliando alunos na construção de interfaces, esclarecendo dúvidas sobre HTML, CSS e JavaScript e contribuindo para o entendimento prático dos conceitos ensinados.',
+        'Orientou mais de 20 estudantes em Java, Spring Boot, HTML, CSS, JavaScript, desenvolvimento web responsivo e fundamentos de Engenharia de Software por meio de projetos práticos e atividades em laboratório. Realizou revisões de código, apoiou depuração, orientou sobre arquitetura de aplicações e implementação de interfaces e ofereceu feedback individualizado para melhorar a qualidade do código, a usabilidade e a resolução de problemas.',
       color: 'bg-purple-500',
     },
     {
-      id: 3,
+      id: 4,
       icon: <FaTrophy />,
       company: 'Clube Chalezinho',
       role: 'Gerente de Equipe',
-      period: 'Mar 2024 – Dez 2025',
-      type: 'Freelance',
+      period: 'Out 2023 – Jun 2026',
+      type: 'Híbrido',
       description:
-        'Liderou um grupo de 15 pessoas reconhecido como equipe de alto desempenho por vários meses consecutivos. Orientou os membros da equipe, resolveu desafios do dia a dia, distribuiu tarefas com eficiência e garantiu um ambiente colaborativo e orientado a resultados.',
+        'Liderou uma equipe de 15 colaboradores reconhecida como a de melhor desempenho por nove meses consecutivos, com distribuição eficiente de tarefas, gestão de desempenho e otimização de processos. Desenvolveu dashboards e relatórios operacionais para ampliar a visibilidade da carga de trabalho e apoiar decisões, gerenciou as operações diárias e promoveu uma cultura colaborativa e orientada a resultados. Também planejou e executou eventos, conduziu a comunicação e as negociações com clientes, apoiou iniciativas comerciais e coordenou entregas entre diferentes áreas.',
       color: 'bg-yellow-500',
-    },
-    {
-      id: 4,
-      icon: <FaCode />,
-      company: 'Clube Chalezinho',
-      role: 'Coordenador de Eventos',
-      period: 'Out 2023 – Dez 2025',
-      type: 'Freelance',
-      description:
-        'Atuou na organização de eventos, auxiliando no planejamento e execução, mantendo comunicação diária com dezenas de clientes, apresentando produtos e conduzindo negociações para fechar vendas com sucesso.',
-      color: 'bg-green-500',
     },
   ];
 
@@ -160,17 +161,23 @@ const Experience = ({ language = 'pt' }) => {
             };
             const l = levels[language];
             const langs = [
-              { icon: <FaJava size={40} />, color: '#F89820', name: 'Java', level: l.avancado, pct: 90 },
-              { icon: <SiSpringboot size={40} />, color: '#6DB33F', name: 'Spring Boot', level: l.avancado, pct: 88 },
-              { icon: <SiJavascript size={40} />, color: '#F7DF1E', name: 'JavaScript', level: l.avancado, pct: 85 },
-              { icon: <SiHtml5 size={40} />, color: '#E34F26', name: 'HTML5', level: l.avancado, pct: 85 },
-              { icon: <SiCss3 size={40} />, color: '#1572B6', name: 'CSS3', level: l.avancado, pct: 85 },
-              { icon: <SiBootstrap size={40} />, color: '#7952B3', name: 'Bootstrap', level: l.avancado, pct: 85 },
-              { icon: <SiTailwindcss size={40} />, color: '#06B6D4', name: 'Tailwind CSS', level: l.avancado, pct: 85 },
-              { icon: <SiGithub size={40} />, color: '#FFFFFF', name: 'GitHub', level: l.avancado, pct: 85 },
-              { icon: <SiReact size={40} />, color: '#61DAFB', name: 'React', level: l.intermediario, pct: 60 },
-              { icon: <span className="font-black text-4xl leading-none" style={{ color: '#A8B9CC' }}>C</span>, color: '#A8B9CC', name: 'C', level: l.intermediario, pct: 55 },
-              { icon: <SiPython size={40} />, color: '#3776AB', name: 'Python', level: l.iniciante, pct: 30 },
+              { icon: <FaJava size={40} />, color: '#F89820', name: 'Java', level: l.avancado, pct: 100 },
+              { icon: <SiSpringboot size={40} />, color: '#6DB33F', name: 'Spring Boot', level: l.avancado, pct: 100 },
+              { icon: <SiPython size={40} />, color: '#3776AB', name: 'Python', level: l.avancado, pct: 100 },
+              { icon: <SiJavascript size={40} />, color: '#F7DF1E', name: 'JavaScript', level: l.avancado, pct: 100 },
+              { icon: <SiTypescript size={40} />, color: '#3178C6', name: 'TypeScript', level: l.avancado, pct: 100 },
+              { icon: <SiReact size={40} />, color: '#61DAFB', name: 'React', level: l.avancado, pct: 100 },
+              { icon: <SiHtml5 size={40} />, color: '#E34F26', name: 'HTML5', level: l.avancado, pct: 100 },
+              { icon: <SiCss3 size={40} />, color: '#1572B6', name: 'CSS3', level: l.avancado, pct: 100 },
+              { icon: <SiBootstrap size={40} />, color: '#7952B3', name: 'Bootstrap', level: l.avancado, pct: 100 },
+              { icon: <SiTailwindcss size={40} />, color: '#06B6D4', name: 'Tailwind CSS', level: l.avancado, pct: 100 },
+              { icon: <SiGithub size={40} />, color: '#FFFFFF', name: 'Git / GitHub', level: l.avancado, pct: 100 },
+              { icon: <FaDatabase size={40} />, color: '#00E5FF', name: 'SQL', level: l.intermediario, pct: 70 },
+              { icon: <SiPostgresql size={40} />, color: '#4169E1', name: 'PostgreSQL', level: l.intermediario, pct: 70 },
+              { icon: <SiMysql size={40} />, color: '#4479A1', name: 'MySQL', level: l.intermediario, pct: 70 },
+              { icon: <SiDocker size={40} />, color: '#2496ED', name: 'Docker', level: l.intermediario, pct: 70 },
+              { icon: <FaChartBar size={40} />, color: '#F2C811', name: 'Power BI', level: l.intermediario, pct: 70 },
+              { icon: <span className="font-black text-4xl leading-none" style={{ color: '#A8B9CC' }}>C</span>, color: '#A8B9CC', name: 'C', level: l.intermediario, pct: 60 },
             ];
             return (
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-14">
@@ -200,10 +207,26 @@ const Experience = ({ language = 'pt' }) => {
           </h4>
           <div className="flex flex-wrap justify-center gap-4">
             {[
+              'Software Architecture',
+              'Backend Development',
+              'Full-Stack Development',
+              'REST APIs & API Integration',
+              'AI Integration',
+              'Prompt Engineering',
+              'Cloud Deployment',
+              'Data Processing & Analysis',
+              'Business Intelligence',
               'Cybersecurity',
               'SOC / OT Security',
+              'SIEM',
+              'Threat Detection & Response',
+              'Vulnerability Assessment',
               'Active Directory',
               'Claroty',
+              'CrowdStrike',
+              'Qualys',
+              'Microsoft Sentinel',
+              'Google SecOps',
               'Networking',
               'Cryptography',
               'UI/UX',

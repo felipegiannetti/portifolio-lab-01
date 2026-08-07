@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLock } from 'react-icons/fa';
 
 const Projects = ({ language = 'pt' }) => {
   const projectsEN = [
@@ -7,7 +7,7 @@ const Projects = ({ language = 'pt' }) => {
       id: 1,
       name: 'Robot Battle – Arcade Controller',
       description:
-        'Physical robot battle game controlled by humans via an arcade joystick and a smartphone app over Bluetooth. Each robot carries a balloon, and the goal is to pop the opponent\'s balloon first. Built with Arduino, C++ and MIT App Inventor. Highlighted project from the 1st semester of Computer Engineering at PUC Minas.',
+        'Award-winning integrated robotics system featuring two robots that interact in real time through a custom-built arcade controller and a smartphone app over Bluetooth. Developed the embedded C++ software, electronic circuits, communication protocols, and control logic used to coordinate movement and the physical balloon-battle mechanic. The project received an Outstanding Work Certificate in the Computer Engineering program at PUC Minas.',
       technologies: ['C++', 'Arduino', 'Bluetooth', 'MIT App Inventor'],
       github: 'https://github.com/felipegiannetti/projeto-interacao-robos-destaque-primeiro-periodo',
       live: null,
@@ -47,6 +47,54 @@ const Projects = ({ language = 'pt' }) => {
       image: '/projects/n8n.png',
       date: '2025',
     },
+    {
+      id: 5,
+      name: 'AI-Powered Financial & Strategic Consulting Platform',
+      description:
+        'End-to-end enterprise platform that automates financial and strategic consulting workflows. The solution supports corporate restructuring, business valuation, investment risk analysis, and cost-of-capital calculations, integrating more than 10 external APIs for data aggregation and automated reporting. AI-powered capabilities generate contextual recommendations and adapt analyses to each project, while a scalable full-stack architecture supports testing, cloud deployment, and continuous product evolution.',
+      technologies: ['Java', 'Spring Boot', 'Python', 'React', 'TypeScript', 'PostgreSQL', 'REST APIs', 'AI Integration', 'Docker', 'Cloud'],
+      github: null,
+      live: null,
+      image: null,
+      date: '2025–2026',
+      internal: true,
+    },
+    {
+      id: 6,
+      name: 'Global Cybersecurity Training Platform',
+      description:
+        'Global cloud-based training platform independently designed, architected, developed, tested, deployed, and launched for cybersecurity interns and apprentices. Built from backend and frontend through cloud deployment, it combines gamified learning paths, interactive quizzes, practical challenges, and AI-assisted educational resources to create a consistent cybersecurity awareness experience across multiple regions.',
+      technologies: ['Full Stack', 'Software Architecture', 'AI Integration', 'REST APIs', 'Cloud Deployment', 'Gamification'],
+      github: null,
+      live: null,
+      image: null,
+      date: '2026',
+      internal: true,
+    },
+    {
+      id: 7,
+      name: 'Cybersecurity Automation & Integration Solutions',
+      description:
+        'Python automation tools, API integrations, and data-processing solutions built on top of enterprise cybersecurity platforms. These solutions automate repetitive workflows, enrich security data, consolidate multiple sources, and accelerate investigations, reporting, and operational decisions. The work also improved OT asset management, increasing metadata visibility by 15.5% and reducing inaccurate records by 23.4%.',
+      technologies: ['Python', 'REST APIs', 'Data Processing', 'Cybersecurity', 'OT / ICS', 'Software Automation'],
+      github: null,
+      live: null,
+      image: null,
+      date: '2026',
+      internal: true,
+    },
+    {
+      id: 8,
+      name: 'Cybersecurity Data Analytics & Reporting Solutions',
+      description:
+        'Automated data pipelines, executive reports, and KPI dashboards that consolidate information from multiple cybersecurity platforms into actionable insights. Built with Power BI and data-processing techniques, the solutions improve operational visibility, asset intelligence, performance monitoring, and data-driven decision-making for global cybersecurity operations.',
+      technologies: ['Power BI', 'Python', 'Data Analytics', 'KPI Pipelines', 'Business Intelligence', 'Cybersecurity'],
+      github: null,
+      live: null,
+      image: null,
+      date: '2026',
+      internal: true,
+    },
   ];
 
   const projectsPT = [
@@ -54,7 +102,7 @@ const Projects = ({ language = 'pt' }) => {
       id: 1,
       name: 'Briga de Robôs – Controle Arcade',
       description:
-        'Jogo físico de batalha de robôs controlados por humanos via controle arcade e aplicativo para smartphone por Bluetooth. Cada robô possui um balão acoplado e o objetivo é estourar o balão do adversário. Desenvolvido com Arduino, C++ e MIT App Inventor. Projeto destaque do 1º semestre de Engenharia de Computação na PUC Minas.',
+        'Sistema integrado de robótica premiado, composto por dois robôs que interagem em tempo real por meio de um controle arcade desenvolvido especialmente para o projeto e de um aplicativo conectado por Bluetooth. Foram desenvolvidos o software embarcado em C++, os circuitos eletrônicos, os protocolos de comunicação e a lógica de controle responsáveis pela movimentação e pela dinâmica física de batalha com balões. O projeto recebeu um Certificado de Trabalho de Destaque no programa de Engenharia da Computação da PUC Minas.',
       technologies: ['C++', 'Arduino', 'Bluetooth', 'MIT App Inventor'],
       github: 'https://github.com/felipegiannetti/projeto-interacao-robos-destaque-primeiro-periodo',
       live: null,
@@ -94,6 +142,54 @@ const Projects = ({ language = 'pt' }) => {
       image: '/projects/n8n.png',
       date: '2025',
     },
+    {
+      id: 5,
+      name: 'Plataforma de Automação para Consultoria Financeira e Estratégica com IA',
+      description:
+        'Plataforma corporativa completa que automatiza fluxos de consultoria financeira e estratégica. A solução contempla reestruturação empresarial, valuation, análise de riscos de investimento e cálculos de custo de capital, integrando mais de 10 APIs externas para agregação de dados e geração automática de relatórios. Recursos baseados em IA produzem recomendações contextualizadas e adaptam as análises a cada projeto, enquanto uma arquitetura Full Stack escalável sustenta testes, implantação em nuvem e evolução contínua do produto.',
+      technologies: ['Java', 'Spring Boot', 'Python', 'React', 'TypeScript', 'PostgreSQL', 'REST APIs', 'Integração de IA', 'Docker', 'Cloud'],
+      github: null,
+      live: null,
+      image: null,
+      date: '2025–2026',
+      internal: true,
+    },
+    {
+      id: 6,
+      name: 'Plataforma Global de Treinamento em Cibersegurança',
+      description:
+        'Plataforma global de treinamento em nuvem projetada, arquitetada, desenvolvida, testada, implantada e colocada em produção de forma independente para estagiários e aprendizes de cibersegurança. Construída do backend e frontend à implantação em nuvem, reúne trilhas gamificadas, questionários interativos, desafios práticos e recursos educacionais assistidos por IA para padronizar a conscientização em cibersegurança em diferentes regiões.',
+      technologies: ['Full Stack', 'Arquitetura de Software', 'Integração de IA', 'REST APIs', 'Cloud Deployment', 'Gamificação'],
+      github: null,
+      live: null,
+      image: null,
+      date: '2026',
+      internal: true,
+    },
+    {
+      id: 7,
+      name: 'Soluções de Automação e Integração para Cibersegurança',
+      description:
+        'Ferramentas de automação em Python, integrações de APIs e soluções de processamento de dados desenvolvidas sobre plataformas corporativas de cibersegurança. As soluções automatizam fluxos repetitivos, enriquecem dados de segurança, consolidam múltiplas fontes e aceleram investigações, relatórios e decisões operacionais. O trabalho também aprimorou a gestão de ativos de OT, aumentando a visibilidade dos metadados em 15,5% e reduzindo registros incorretos em 23,4%.',
+      technologies: ['Python', 'REST APIs', 'Processamento de Dados', 'Cibersegurança', 'OT / ICS', 'Automação de Software'],
+      github: null,
+      live: null,
+      image: null,
+      date: '2026',
+      internal: true,
+    },
+    {
+      id: 8,
+      name: 'Soluções de Análise de Dados e Relatórios para Cibersegurança',
+      description:
+        'Pipelines automatizados de dados, relatórios executivos e dashboards de KPIs que consolidam informações de múltiplas plataformas de cibersegurança em insights acionáveis. Desenvolvidas com Power BI e técnicas de processamento de dados, as soluções ampliam a visibilidade operacional, a inteligência sobre ativos, o acompanhamento de desempenho e a tomada de decisão orientada por dados em operações globais de cibersegurança.',
+      technologies: ['Power BI', 'Python', 'Análise de Dados', 'Pipelines de KPIs', 'Business Intelligence', 'Cibersegurança'],
+      github: null,
+      live: null,
+      image: null,
+      date: '2026',
+      internal: true,
+    },
   ];
 
   const projects = language === 'en' ? projectsEN : projectsPT;
@@ -119,7 +215,7 @@ const Projects = ({ language = 'pt' }) => {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className={`relative flex items-start md:items-center md:flex-row hover:z-50 pl-12 md:pl-0${index > 0 ? ' mt-6 md:-mt-36' : ''}`}
+                className={`relative flex items-start md:items-center md:flex-row hover:z-50 pl-12 md:pl-0${index > 0 ? ' mt-6 md:mt-8' : ''}`}
                 style={{ zIndex: projects.length - index }}
               >
                 {/* Mobile: dot à esquerda */}
@@ -129,15 +225,24 @@ const Projects = ({ language = 'pt' }) => {
                 <div className={`w-full md:w-5/12 ${index % 2 !== 0 ? 'md:order-3' : ''}`}>
                   <div className="bg-primary-dark border border-gray-700 hover:border-accent-green rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-[0_0_18px_rgba(0,229,255,0.15)]">
                     {/* Image */}
-                    <img
-                      src={project.image}
-                      alt={project.name}
-                      className="w-full h-44 object-cover object-top"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = `https://via.placeholder.com/600x400/1e3a5f/00e5ff?text=${encodeURIComponent(project.name)}`;
-                      }}
-                    />
+                    {project.image ? (
+                      <img
+                        src={project.image}
+                        alt={project.name}
+                        className="w-full h-44 object-cover object-top"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = `https://via.placeholder.com/600x400/1e3a5f/00e5ff?text=${encodeURIComponent(project.name)}`;
+                        }}
+                      />
+                    ) : (
+                      <div className="h-44 bg-gradient-to-br from-primary-blue via-primary-dark to-primary-blue flex flex-col items-center justify-center gap-3 border-b border-accent-green/20 px-6 text-center">
+                        <FaLock className="text-accent-green" size={32} />
+                        <span className="text-accent-green text-xs font-extrabold uppercase tracking-widest">
+                          {language === 'en' ? 'Internal corporate project' : 'Projeto corporativo interno'}
+                        </span>
+                      </div>
+                    )}
                     {/* Content */}
                     <div className="p-4 flex flex-col gap-2">
                       <div className="flex items-start justify-between gap-2">
@@ -154,15 +259,22 @@ const Projects = ({ language = 'pt' }) => {
                           </span>
                         ))}
                       </div>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 bg-accent-green text-primary-dark px-3 py-1 rounded-lg text-xs font-bold hover:bg-white transition-colors duration-300 self-start mt-1"
-                      >
-                        <FaGithub size={13} />
-                        GitHub
-                      </a>
+                      {project.github ? (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 bg-accent-green text-primary-dark px-3 py-1 rounded-lg text-xs font-bold hover:bg-white transition-colors duration-300 self-start mt-1"
+                        >
+                          <FaGithub size={13} />
+                          GitHub
+                        </a>
+                      ) : (
+                        <span className="inline-flex items-center gap-1.5 bg-primary-blue text-gray-300 border border-gray-600 px-3 py-1 rounded-lg text-xs font-bold self-start mt-1">
+                          <FaLock size={11} />
+                          {language === 'en' ? 'Internal project' : 'Projeto interno'}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
